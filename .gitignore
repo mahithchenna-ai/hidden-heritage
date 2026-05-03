@@ -4,10 +4,5 @@ dist/
 npm.log
 .DS_Store
 
-# Project Files (Untracked as per user request)
-index.html
-netlify.toml
-package.json
-package-lock.json
-vite.config.js
-src/
+# Local env files
+*.local
