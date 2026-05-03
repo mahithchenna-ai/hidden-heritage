@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore India’s Hidden Heritage</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4b3023',
+              secondary: '#6b5c53',
+              accent: '#c86b3a',
+              background: '#f9f4ef',
+              text: '#2c1e16',
+            },
+            fontFamily: {
+              title: ['"Playfair Display"', 'serif'],
+              body: ['Inter', 'sans-serif'],
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              treadmillScroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'fade-in-up-delay': 'fadeInUp 1s ease-out 0.2s both',
+              'treadmill-scroll': 'treadmillScroll 40s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply font-body bg-background text-text leading-relaxed;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          @apply font-title font-semibold text-primary mb-4;
+        }
+      }
+      @layer components {
+        .container {
+          @apply max-w-[1200px] mx-auto px-4;
+        }
+        .section {
+          @apply py-20;
+        }
+        .btn {
+          @apply inline-block px-6 py-3 rounded font-medium cursor-pointer transition-all duration-300 border-none font-body;
+        }
+        .btn-primary {
+          @apply bg-accent text-white hover:bg-[#a6562d];
+        }
+        .btn-secondary {
+          @apply bg-transparent border border-primary text-primary hover:bg-primary hover:text-white;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <div id="root" class="flex-1 flex flex-col"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
