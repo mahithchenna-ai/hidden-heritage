@@ -1,6 +1,6 @@
 import FeedbackForm from '../components/FeedbackForm';
 
-const FeedbackError = () => {
+const Feedback = () => {
   return (
     <div className="container py-20 mx-auto px-4">
       <div className="max-w-[600px] mx-auto">

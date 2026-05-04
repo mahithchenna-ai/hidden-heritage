@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const FeedbackFormError = () => {
+const FeedbackForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', rating: '5', message: '' });
   const [submitted, setSubmitted] = useState(false);
 

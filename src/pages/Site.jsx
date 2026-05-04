@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { chambalSites } from '../data/mockData';
 
-const SiteError = () => {
+const Site = () => {
   const { siteId } = useParams();
   const site = chambalSites.find(s => s.id === siteId) || chambalSites[0];
 
