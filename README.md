@@ -2,40 +2,49 @@
 
 This is a complete, production-ready frontend MVP for **Hidden Heritage**, a tourism-tech platform showcasing India's forgotten heritage sites, starting with the Chambal region.
 
-## Tech Stack
-- React + TypeScript
-- Vite (Fast, modern build tool)
-- React Router (Routing)
-- Leaflet + React-Leaflet (Interactive Maps)
-- Vanilla CSS (Custom design system)
-- LocalStorage for feedback data
-- Lucide React (Icons)
+## 🚀 Tech Stack
+- **React 18** (JavaScript)
+- **Vite** (Next-gen frontend tool)
+- **React Router 6** (Navigation)
+- **Leaflet & React-Leaflet** (Interactive Geospatial Maps)
+- **Tailwind CSS & Vanilla CSS** (Hybrid design system)
+- **Lucide React** (Iconography)
+- **LocalStorage API** (Persistent feedback storage)
 
-## Features Included
-1. **Home**: Fullscreen hero with scrolling photo treadmill and region cards.
-2. **Explore (Region)**: Shows the Chambal region with an asymmetrical grid of sites and an interactive map.
-3. **Trip Builder**: 
-   - Interactive drag-and-drop itinerary planner.
-   - Dynamic calculations for travel time, accommodation, food, and local guides based on budget presets.
-4. **Site Details**: Dedicated page for each site showing a hero image, full description, gallery, and metadata.
-5. **Interactive Map**: Displays site pins, hover interactions, and draws routes between selected sites.
-6. **About Page**: Describes the mission, vision, and purpose.
-7. **Feedback Form**: Validated form saving data to `localStorage`.
+## ✨ Key Features
+- **🏡 Immersive Home**: Fullscreen hero sections, dynamic photo treadmills, and curated region cards.
+- **🗺️ Interactive Region Mapping**: Asymmetrical grid layouts for sites integrated with real-time Leaflet map pins and routing.
+- **📅 Smart Trip Builder**: 
+  - Drag-and-drop itinerary organization.
+  - Automatic budget estimation for travel, food, and expert guides based on user presets.
+- **🏺 Detailed Site Discovery**: High-fidelity pages with heritage metadata, image galleries, and cultural context.
+- **📝 Feedback Loop**: Integrated feedback collection with local persistence for user engagement tracking.
 
-## Setup Instructions
+## 📂 Project Structure
+```text
+src/
+├── components/   # Reusable UI elements (Navbar, Footer, SiteCard, etc.)
+├── pages/        # Main route containers (Home, About, Site Details, etc.)
+├── data/         # Mock data and configuration constants
+├── App.jsx       # Main application entry and routing
+└── index.html    # Base HTML template with Tailwind configuration
+```
 
-1. Ensure you have **Node.js** installed.
-2. Run `npm install` to install all dependencies.
-3. Run `npm run dev` to start the development server.
-4. Open the displayed `localhost` URL in your browser.
+## 🛠️ Getting Started
 
-## Design Notes
-- The application matches the visual hierarchy, layout, spacing, and styling of the provided design reference.
-- Custom typography (`Playfair Display` and `Inter`) has been incorporated via Google Fonts.
-- Responsive design has been implemented across the application.
-- Modern interactions like hover scale, micro-animations, blur effects, and glassmorphism (in the navbar) are included to provide a rich, premium feel.
+1. **Clone the repository**: `git clone https://github.com/mahithchenna-ai/hidden-heritage.git`
+2. **Install dependencies**: `npm install`
+3. **Start development server**: `npm run dev`
+4. **Access the app**: Open `http://localhost:5173` in your browser.
 
-## Future Enhancements
-- Integration with an actual backend API.
-- Actual path-finding APIs (e.g., Mapbox Directions API) for more accurate travel times.
-- Real booking payment gateways.
+## 🎨 Design Philosophy
+- **Rich Aesthetics**: Utilizes `Playfair Display` for a classic heritage feel and `Inter` for modern readability.
+- **Micro-interactions**: Subtle hover effects, smooth transitions, and glassmorphism elements provide a premium "high-end" user experience.
+- **Accessibility**: Designed with a responsive-first approach to ensure a seamless experience across all devices.
+
+## 🔮 Future Roadmap
+- [ ] Integration with a live PostgreSQL/Supabase backend.
+- [ ] Integration with Mapbox for advanced pathfinding and turn-by-turn directions.
+- [ ] Real-time booking and payment gateway integration.
+- [ ] Community-driven heritage documentation (Wiki-style).
+
