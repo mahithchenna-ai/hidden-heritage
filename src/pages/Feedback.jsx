@@ -1,5 +1,8 @@
 import FeedbackForm from '../components/FeedbackForm';
 
+/**
+ * Feedback page - Provides a user interface for submitting experience feedback.
+ */
 const Feedback = () => {
   return (
     <div className="container py-20 mx-auto px-4">

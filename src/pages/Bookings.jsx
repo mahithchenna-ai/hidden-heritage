@@ -1,3 +1,6 @@
+/**
+ * Bookings component - Displays user's active bookings and exploration options.
+ */
 const Bookings = () => {
   return (
     <div className="container py-20 text-center max-w-[600px] mx-auto px-4 min-h-[60vh] flex flex-col justify-center items-center">

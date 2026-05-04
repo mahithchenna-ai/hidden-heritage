@@ -1,3 +1,6 @@
+/**
+ * About component - Displays information about Hidden Heritage mission and vision.
+ */
 const About = () => {
   return (
     <div className="container py-20 max-w-[800px] mx-auto px-4">
