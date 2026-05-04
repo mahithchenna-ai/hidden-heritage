@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 
+/**
+ * SiteCard component - A reusable card for displaying heritage site previews.
+ */
 const SiteCard = ({ site, asymmetryClass = '' }) => {
   const isLarge = asymmetryClass === 'card-large';
   

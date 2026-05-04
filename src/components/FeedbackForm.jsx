@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+/**
+ * FeedbackForm component - Handles user feedback input and local storage persistence.
+ */
 const FeedbackForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', rating: '5', message: '' });
   const [submitted, setSubmitted] = useState(false);
