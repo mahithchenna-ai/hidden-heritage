@@ -1,4 +1,4 @@
-const About = () => {
+const AboutError = () => {
   return (
     <div className="container py-20 max-w-[800px] mx-auto px-4">
       <h1 className="text-center text-4xl font-title font-bold text-primary mb-8">About Hidden Heritage</h1>

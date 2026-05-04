@@ -1,4 +1,4 @@
-const Bookings = () => {
+const BookingsError = () => {
   return (
     <div className="container py-20 text-center max-w-[600px] mx-auto px-4 min-h-[60vh] flex flex-col justify-center items-center">
       <h1 className="text-4xl font-title font-bold text-primary mb-4">Your Bookings</h1>

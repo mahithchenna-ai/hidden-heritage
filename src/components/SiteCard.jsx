@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const SiteCard = ({ site, asymmetryClass = '' }) => {
+const SiteCardError = ({ site, asymmetryClass = '' }) => {
   const isLarge = asymmetryClass === 'card-large';
   
   return (
